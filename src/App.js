@@ -6,10 +6,10 @@ import About from './pages/About/About';
 
 function App() {
   return (
-    <div className='bg-[#eadacd] dark:bg-[black]'>
-       <Header />
-       <Hero />
-       <About />
+    <div className='bg-[#dddddd] dark:bg-[black]'>
+      <Header />
+      <Hero />
+      <About />
     </div>
   );
 }
