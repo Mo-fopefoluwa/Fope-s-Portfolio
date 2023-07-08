@@ -12,19 +12,25 @@ const Header = () => {
         className="flex justify-between px-[4rem] py-[2rem] fixed w-full bg-[#e4dacd] dark:bg-black text-black dark:text-white z-50"
         style={{ boxShadow: headerShadow }}
       >
-        <div className="logo text-[2rem] font-[650]">Mo</div>
-        <ul className="flex gap-6 md:hidden text-[1.2rem]">
+        <div className="logo text-[2rem] font-[650] ">Mo</div>
+        <ul className="flex gap-10 md:hidden text-[1.2rem] font-[650] ">
           <li>
-            <a href="/">Home</a>
+            <a className="hover:text-blue-800" href="/">
+              Home
+            </a>
           </li>
           <li>
-            <a href="/">About</a>
+            <a className="hover:text-blue-800" href="/">
+              About
+            </a>
           </li>
           <li>
-            <a href="/">Portfolio</a>
+            <a className="hover:text-blue-800" href="/">
+              Portfolio
+            </a>
           </li>
         </ul>
-        <div className="menu relative" onClick={() => setOpen(!open)}>
+        <div className="menu relative hidden" onClick={() => setOpen(!open)}>
           {!open ? <i class="fa fa-bars"></i> : <Resp />}
         </div>
       </header>

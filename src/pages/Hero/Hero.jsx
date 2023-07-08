@@ -22,7 +22,7 @@ const Hero = () => {
           <div className="flex justify-center">
             <img className="w-[2.5rem]" src="certificate.png" alt="" />
           </div>
-          <span className="text-[1.2rem] font-[500] text-blue-800">
+          <span className="text-[1.2rem] font-[550] text-blue-800">
             Frontend Web Developer
           </span>
         </div>
