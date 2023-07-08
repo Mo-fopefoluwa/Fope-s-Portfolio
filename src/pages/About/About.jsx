@@ -9,7 +9,7 @@ const About = () => {
             About Mo
           </h1>
           <br />
-          <p className="text-[1.2rem] text-center dark:text-gray-400">
+          <p className="text-[1.2rem] text-center dark:text-gray-600">
             Mofopefoluwa Faokunla is a self-taught Frontend Web Developer with a
             passion for building beautiful and functional websites. <br />
             My journey into the world of web development began 3 years ago when
@@ -22,20 +22,20 @@ const About = () => {
           </p>
         </div>
         <div className="pt-[3rem] flex flex-col gap-[2rem] justify-center items-center">
-          <span className="text-[1.2rem] font-[500] dark:text-gray-400">
+          <span className="text-[1.2rem] font-[500] dark:text-white text-center ">
             A link to my{" "}
-            <a className="text-orange-400" href="">
+            <a className="text-blue-800" href="">
               CV
             </a>{" "}
             for more information{" "}
           </span>
           <span className="text-[1.2rem] font-[500]">
-            <a className="text-orange-400" href="mailto:fopefaokunla@gmail.com">
+            <a className="text-blue-800" href="mailto:fopefaokunla@gmail.com">
               Email me
             </a>
           </span>
-          <span className="text-[1.2rem] font-[500] text-orange-400 ">
-            <a className="text-orange-400" href="tel:08154980688">
+          <span className="text-[1.2rem] font-[500]">
+            <a className="text-blue-800" href="tel:08154980688">
               Contact me
             </a>
           </span>

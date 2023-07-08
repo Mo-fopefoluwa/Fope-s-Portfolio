@@ -8,7 +8,7 @@ const Hero = () => {
           {" "}
           Hey There, <br /> I'm Mofopefoluwa.
         </span>
-        <span className="text-[1.5rem] font-[450] dark:text-gray-400 ">
+        <span className="text-[1.5rem] font-[450] dark:text-gray-600 ">
           I build beautiful and responsive websites.
         </span>
       </div>
@@ -29,10 +29,10 @@ const Hero = () => {
       </div>
 
       <div className="flex flex-col justify-center text-center items-center pb-[4rem]  px-[4rem] pt-[32rem] lg:flex-row lg:justify-between lg:items-start lg:pt-[10rem] gap-10 lg:px-[4.5rem] ">
-        <span className="text-[1.5rem] font-[500] dark:text-gray-400 ">
+        <span className="text-[1.5rem] font-[500] dark:text-gray-600 ">
           Let's talk about your project or just say{" "}
           <a
-            className="text-orange-400 text-[2rem]"
+            className="text-blue-800 text-[2rem]"
             href="mailto:fopefaokunla@gmail.com"
           >
             hi!
