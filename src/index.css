@@ -2,16 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
+/* * {
   outline: transparent;
   -webkit-tap-highlight-color: transparent;
-}
+} */
 
 body {
   margin: 0;
   font-family: 'DM Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
   
 }
 
@@ -48,8 +49,8 @@ label {
 }
 
 label div {
-  width: 6px;
-  height: 6px;
+  width: 4px;
+  height: 4px;
   background-color: #143240;
   margin-left: 0;
   margin-bottom: 6px;
@@ -59,11 +60,11 @@ label div {
 }
 
 label div:first-child {
-  width: 22px;
+  width: 30px;
 }
 
 label div:nth-child(2) {
-  width: 15px;
+  width: 30px;
 }
 
 label div:last-child {

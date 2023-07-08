@@ -3,6 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <div>
+      <a className="anchor" id="about"></a>
       <div className=" pt-[10rem] lg:pt-[25rem] px-[4rem] lg:px-[6rem]">
         <div>
           <h1 className="text-center font-[600] text-[2rem] pb-[2.5rem] text-blue-800">

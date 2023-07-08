@@ -20,19 +20,23 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a className="hover:text-blue-800" href="/">
+            <a className="hover:text-blue-800" href="#about">
               About
             </a>
           </li>
           <li>
-            <a className="hover:text-blue-800" href="/">
+            <a className="hover:text-blue-800" href="#portfolio">
               Portfolio
             </a>
           </li>
         </ul>
-        <div className="menu relative lg:hidden" onClick={() => setOpen(!open)}>
+        <div className="menu lg:hidden">
           <input type="checkbox" id="menu_checkbox" />
-          <label for="menu_checkbox">
+          <label
+            for="menu_checkbox"
+            className="relative dark:text-white"
+            onClick={() => setOpen(!open)}
+          >
             <div></div>
             <div></div>
             <div></div>
@@ -46,15 +50,15 @@ const Header = () => {
 
 const Resp = () => {
   return (
-    <ul className="flex flex-col absolute text-[1.2rem] font-[500] text-center gap-[4rem] py-16 bg-[#dddd] dark:bg-black right-0 top-[0rem] w-[80%]">
-      <li className="hover:text-blue-800 text-black dark:text-white text-[1rem] font-[500] ">
+    <ul className="flex flex-col absolute text-[1.2rem] z-30 font-[500] text-center gap-[4rem] py-16 bg-[#dddd] dark:bg-black right-0 top-[7rem] w-[90%]">
+      <li className="hover:text-blue-800 text-black dark:text-white text-[1.1rem] font-[550] ">
         <a href="/">Home</a>
       </li>
-      <li className="hover:text-blue-800 text-black dark:text-white text-[1rem] font-[500]">
-        <a href="/">About</a>
+      <li className="hover:text-blue-800 text-black dark:text-white text-[1.1rem] font-[550]">
+        <a href="#about">About</a>
       </li>
-      <li className="hover:text-blue-800 text-black dark:text-white text-[1rem] font-[500]">
-        <a href="/">Portfolio</a>
+      <li className="hover:text-blue-800 text-black dark:text-white text-[1,1rem] font-[550]">
+        <a href="#portfolio">Portfolio</a>
       </li>
     </ul>
   );
