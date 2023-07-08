@@ -23,19 +23,20 @@ const About = () => {
         </div>
         <div className="pt-[3rem] flex flex-col gap-[2rem] justify-center items-center">
           <span className="text-[1.2rem] font-[500] dark:text-gray-400">
-            A link to my CV for more information{" "}
-            <a className="text-orange-400" href=""></a>
+            A link to my{" "}
+            <a className="text-orange-400" href="">
+              CV
+            </a>{" "}
+            for more information{" "}
           </span>
-          <span className="text-[1.2rem] font-[500] dark:text-gray-400">
-            Email me @{" "}
+          <span className="text-[1.2rem] font-[500]">
             <a className="text-orange-400" href="mailto:fopefaokunla@gmail.com">
-              fopefaokunla@gmail.com
+              Email me
             </a>
           </span>
-          <span className="text-[1.2rem] font-[500] dark:text-gray-400">
-            Contact me :{" "}
+          <span className="text-[1.2rem] font-[500] text-orange-400 ">
             <a className="text-orange-400" href="tel:08154980688">
-              08154980688
+              Contact me
             </a>
           </span>
         </div>
