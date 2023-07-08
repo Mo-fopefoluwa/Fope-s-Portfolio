@@ -18,7 +18,7 @@ const Hero = () => {
           src="me.png"
           alt=""
         />
-        <div className="absolute top-[25rem] lg:top-[20rem] flex flex-col justify-center">
+        <div className="absolute top-[30rem] lg:top-[25rem] flex flex-col justify-center">
           <div className="flex justify-center">
             <img className="w-[2.5rem]" src="certificate.png" alt="" />
           </div>
