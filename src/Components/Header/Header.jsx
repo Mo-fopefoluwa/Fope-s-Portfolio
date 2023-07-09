@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import "./Header.css";
 import useHeaderShadow from "../../hooks/useHeaderShadow";
 //import useOutsideAlerter from "../../hooks/useOutsideAlerter";
@@ -6,7 +6,24 @@ import useHeaderShadow from "../../hooks/useHeaderShadow";
 const Header = () => {
   const [open, setOpen] = useState(false);
   const headerShadow = useHeaderShadow();
-  // const outsideAlerter = useOutsideAlerter();
+  const mobileMenuRef = useRef();
+
+  const closeOpenMenus = useCallback(
+    (e) => {
+      if (
+        mobileMenuRef.current &&
+        open &&
+        !mobileMenuRef.current.contain(e.target)
+      ) {
+        setOpen(false);
+      }
+    },
+    [open]
+  );
+
+  useEffect(() => {
+    document.addEventListener("mousedown", closeOpenMenus);
+  }, [closeOpenMenus]);
 
   return (
     <div>
@@ -17,7 +34,7 @@ const Header = () => {
         <div className="logo text-[2rem] font-[650] ">Mo</div>
         <ul className="flex gap-10 md:hidden text-[1.2rem] font-[650] ">
           <li>
-            <a className="hover:text-blue-800" href="/">
+            <a className="hover:text-blue-800" href="#hero">
               Home
             </a>
           </li>
@@ -33,7 +50,8 @@ const Header = () => {
           </li>
         </ul>
         <div
-          className="menu lg:hidden"
+          ref={closeOpenMenus}
+          className="menu lg:hidden "
           // onClick={() => setOpen(useOutsideAlerter)}
         >
           <input type="checkbox" id="menu_checkbox" />
@@ -57,7 +75,7 @@ const Resp = () => {
   return (
     <ul className="flex flex-col absolute text-[1.2rem] z-30 font-[500] text-center gap-[4rem] py-16 bg-[#dddd] dark:bg-black right-0 top-[7rem] w-[90%]">
       <li className="hover:text-blue-800 text-black dark:text-white text-[1.1rem] font-[550] ">
-        <a href="/">Home</a>
+        <a href="#hero">Home</a>
       </li>
       <li className="hover:text-blue-800 text-black dark:text-white text-[1.1rem] font-[550]">
         <a href="#about">About</a>

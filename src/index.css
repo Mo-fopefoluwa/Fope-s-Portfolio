@@ -91,7 +91,7 @@ label div:last-child {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   /* margin: 4rem 5vw; */
-  padding: 8vw 8rem 8vw 8rem;
+  /* padding: 8vw 8rem 8vw 8rem; */
   list-style-type: none;
 }
 
@@ -192,3 +192,7 @@ label div:last-child {
   -webkit-line-clamp: 3;
   overflow: hidden;
 }    
+/* 
+.footer{
+  background-color: #c0bebedd;
+} */

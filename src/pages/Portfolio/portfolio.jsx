@@ -4,12 +4,12 @@ const portfolio = () => {
   return (
     <div>
       <a className="anchor" id="portfolio"></a>
-      <div>
+      <div className="pt-[6rem]">
         <h1 className="text-blue-800 text-[1.6rem] lg:text-[2rem] font-[600] text-center">
           My Latest Works
         </h1>
         <div>
-          <ul className="cards">
+          <ul className="cards px-[4rem] py-[8vw] lg:px-[8rem] lg:py-[8vw]">
             <li>
               <a href="" className="card">
                 <img

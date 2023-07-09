@@ -3,6 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <div>
+      <a className="anchor" id="hero"></a>
       <div className="txt pt-[10rem] flex flex-col lg:flex-row lg:justify-between gap-[2rem] px-[5rem]">
         <span className=" text-[2.2rem] font-[600] text-blue-800">
           {" "}
