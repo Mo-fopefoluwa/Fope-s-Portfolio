@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import "./Header.css";
 import useHeaderShadow from "../../hooks/useHeaderShadow";
-import useOutsideAlerter from "../../hooks/useOutsideAlerter";
+//import useOutsideAlerter from "../../hooks/useOutsideAlerter";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   const headerShadow = useHeaderShadow();
-  const outsideAlerter = useOutsideAlerter();
+  // const outsideAlerter = useOutsideAlerter();
 
   return (
     <div>
@@ -34,7 +34,7 @@ const Header = () => {
         </ul>
         <div
           className="menu lg:hidden"
-          onClick={() => setOpen(useOutsideAlerter)}
+          // onClick={() => setOpen(useOutsideAlerter)}
         >
           <input type="checkbox" id="menu_checkbox" />
           <label
