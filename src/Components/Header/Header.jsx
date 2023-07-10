@@ -60,9 +60,9 @@ const Header = () => {
             className="relative dark:text-white"
             onClick={() => setOpen(!open)}
           >
-            <div></div>
-            <div></div>
-            <div></div>
+            <div className="bg-black dark:bg-white"></div>
+            <div className="bg-black dark:bg-white"></div>
+            <div className="bg-black dark:bg-white"></div>
           </label>
           {open && <Resp />}
         </div>
@@ -73,7 +73,7 @@ const Header = () => {
 
 const Resp = () => {
   return (
-    <ul className="flex flex-col absolute text-[1.2rem] z-30 font-[500] text-center gap-[4rem] py-16 bg-[#dddd] dark:bg-black right-0 top-[7rem] w-[90%]">
+    <ul className="flex flex-col absolute text-[1.2rem] z-30 font-[500] text-center gap-[4rem] py-16 bg-[#dddd] dark:bg-black right-0 top-[7rem] w-[100%]">
       <li className="hover:text-blue-800 text-black dark:text-white text-[1.1rem] font-[550] ">
         <a href="#hero">Home</a>
       </li>
