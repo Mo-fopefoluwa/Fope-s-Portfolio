@@ -28,7 +28,7 @@ const Header = () => {
   return (
     <div>
       <header
-        className="flex justify-between px-[4rem] py-[2rem] fixed w-full bg-[#dddd] dark:bg-black text-black dark:text-white z-50"
+        className="flex justify-between px-[4rem] py-[2rem] fixed w-full bg-[#dddd] dark:bg-gray-900 text-black dark:text-white z-50"
         style={{ boxShadow: headerShadow }}
       >
         <div className="logo text-[2rem] font-[650] ">Mo</div>
