@@ -6,24 +6,6 @@ import useHeaderShadow from "../../hooks/useHeaderShadow";
 const Header = () => {
   const [open, setOpen] = useState(false);
   const headerShadow = useHeaderShadow();
-  const mobileMenuRef = useRef();
-
-  const closeOpenMenus = useCallback(
-    (e) => {
-      if (
-        mobileMenuRef.current &&
-        open &&
-        !mobileMenuRef.current.contain(e.target)
-      ) {
-        setOpen(false);
-      }
-    },
-    [open]
-  );
-
-  useEffect(() => {
-    document.addEventListener("mousedown", closeOpenMenus);
-  }, [closeOpenMenus]);
 
   return (
     <div>
@@ -34,33 +16,29 @@ const Header = () => {
         <div className="logo text-[2rem] font-[650] ">Mo</div>
         <ul className="flex gap-10 md:hidden text-[1.2rem] font-[650] ">
           <li>
-            <a className="hover:text-blue-800" href="#hero">
+            <a className="hover:text-blue-800 scroll-smooth " href="#hero">
               Home
             </a>
           </li>
           <li>
-            <a className="hover:text-blue-800" href="#about">
+            <a className="hover:text-blue-800 scroll-smooth" href="#about">
               About
             </a>
           </li>
           <li>
-            <a className="hover:text-blue-800" href="#portfolio">
+            <a className="hover:text-blue-800 scroll-smooth" href="#portfolio">
               Portfolio
             </a>
           </li>
         </ul>
-        <div
-          ref={closeOpenMenus}
-          className="menu lg:hidden "
-          // onClick={() => setOpen(useOutsideAlerter)}
-        >
+        <div className="menu lg:hidden ">
           <input type="checkbox" id="menu_checkbox" />
           <label
             for="menu_checkbox"
             className="relative dark:text-white"
             onClick={() => setOpen(!open)}
           >
-            <div className="bg-black dark:bg-white"></div>
+            <div className="bg-black dark:bg-white "></div>
             <div className="bg-black dark:bg-white"></div>
             <div className="bg-black dark:bg-white"></div>
           </label>
@@ -73,14 +51,17 @@ const Header = () => {
 
 const Resp = () => {
   return (
-    <ul className="flex flex-col absolute text-[1.2rem] z-30 font-[500] text-center gap-[4rem] py-16 bg-[#dddd] dark:bg-black right-0 top-[7rem] w-[100%]">
-      <li className="hover:text-blue-800 text-black dark:text-white text-[1.1rem] font-[550] ">
+    <ul
+      //onClick={() => useOutsideAlerter()}
+      className="flex flex-col absolute text-[1.2rem] z-30 font-[500] text-center gap-[4rem] py-16 bg-[#dddd] dark:bg-black right-0 top-[7rem] w-[100%]"
+    >
+      <li className="hover:text-blue-800 text-black dark:text-white text-[1.1rem] font-[550] scroll-smooth">
         <a href="#hero">Home</a>
       </li>
-      <li className="hover:text-blue-800 text-black dark:text-white text-[1.1rem] font-[550]">
+      <li className="hover:text-blue-800 text-black dark:text-white text-[1.1rem] font-[550] scroll-smooth">
         <a href="#about">About</a>
       </li>
-      <li className="hover:text-blue-800 text-black dark:text-white text-[1,1rem] font-[550]">
+      <li className="hover:text-blue-800 text-black dark:text-white text-[1,1rem] font-[550] scroll-smooth">
         <a href="#portfolio">Portfolio</a>
       </li>
     </ul>
