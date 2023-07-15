@@ -11,7 +11,9 @@ const portfolio = () => {
         <div>
           <ul className="cards px-[4rem] py-[8vw] lg:px-[8rem] lg:py-[8vw]">
             <li>
-              <a href="" className="card">
+              <a  href="https://practices-store.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer" className="card">
                 <img
                   src="https://i.imgur.com/oYiTqum.jpg"
                   className="card__image"
@@ -50,7 +52,9 @@ const portfolio = () => {
               </a>
             </li>
             <li>
-              <a href="" className="card">
+              <a  href="https://help-center-site.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer" className="card">
                 <img
                   src="https://i.imgur.com/oYiTqum.jpg"
                   className="card__image"
@@ -87,7 +91,9 @@ const portfolio = () => {
               </a>
             </li>
             <li>
-              <a href="" className="card">
+              <a  href="https://careers-neon.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer" className="card">
                 <img
                   src="https://i.imgur.com/2DhmtJ4.jpg"
                   className="card__image"
@@ -128,7 +134,9 @@ const portfolio = () => {
             </li>
 
             <li>
-              <a href="" className="card">
+              <a href="https://fops-weather-app.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer" className="card">
                 <img
                   src="https://i.imgur.com/2DhmtJ4.jpg"
                   className="card__image"
@@ -167,7 +175,9 @@ const portfolio = () => {
               </a>
             </li>
             <li>
-              <a href="" className="card">
+              <a  href="https://fops-to-do.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer" className="card">
                 <img
                   src="https://i.imgur.com/2DhmtJ4.jpg"
                   className="card__image"
@@ -190,7 +200,7 @@ const portfolio = () => {
                     </div>
                   </div>
                   <p className="card__description">
-                    This is project was built using React js, Tailwind css and
+                    This project was built using React js, Tailwind css and
                     Jsx. This is a To- do app to help with day-to-day activities
                     and organizations.
                   </p>

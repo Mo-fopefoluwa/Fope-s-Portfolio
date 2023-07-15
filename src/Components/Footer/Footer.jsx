@@ -1,6 +1,10 @@
 import React from "react";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
   return (
     <div>
       <footer className="bg-[#c0bebedd] dark:bg-gray-900 text-black dark:text-gray-500 flex justify-between px-[3rem] lg:px-[5rem] py-[2rem] lg:py-[3rem]">
@@ -26,9 +30,9 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="/hero">
+            <button className="" onClick={() => scrollToTop()}>
               <i class="bx bx-caret-up-circle"></i>
-            </a>
+            </button>
           </li>
           {/* <li>
               <a href=""></a>
