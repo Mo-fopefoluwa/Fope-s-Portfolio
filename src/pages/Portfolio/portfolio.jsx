@@ -11,14 +11,13 @@ const portfolio = () => {
         <div>
           <ul className="cards px-[4rem] py-[8vw] lg:px-[8rem] lg:py-[8vw]">
             <li>
-              <a  href="https://practices-store.vercel.app/"
-                      target="_blank"
-                      rel="noreferrer" className="card">
-                <img
-                  src="https://i.imgur.com/oYiTqum.jpg"
-                  className="card__image"
-                  alt=""
-                />
+              <a
+                href="https://practices-store.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="card"
+              >
+                <img src="store.jpeg" className="card__image" alt="store" />
                 <div className="card__overlay">
                   <div className="card__header">
                     <svg
@@ -52,14 +51,13 @@ const portfolio = () => {
               </a>
             </li>
             <li>
-              <a  href="https://help-center-site.vercel.app/"
-                      target="_blank"
-                      rel="noreferrer" className="card">
-                <img
-                  src="https://i.imgur.com/oYiTqum.jpg"
-                  className="card__image"
-                  alt=""
-                />
+              <a
+                href="https://help-center-site.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="card"
+              >
+                <img src="help.jpeg" className="card__image" alt="" />
                 <div className="card__overlay">
                   <div className="card__header">
                     <svg
@@ -91,14 +89,13 @@ const portfolio = () => {
               </a>
             </li>
             <li>
-              <a  href="https://careers-neon.vercel.app/"
-                      target="_blank"
-                      rel="noreferrer" className="card">
-                <img
-                  src="https://i.imgur.com/2DhmtJ4.jpg"
-                  className="card__image"
-                  alt=""
-                />
+              <a
+                href="https://sign-up-two.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="card"
+              >
+                <img src="sigup.jpeg" className="card__image" alt="" />
                 <div className="card__overlay">
                   <div className="card__header">
                     <svg
@@ -109,20 +106,19 @@ const portfolio = () => {
                     </svg>
 
                     <div className="card__header-text">
-                      <h3 className="card__title">Careers Page</h3>
+                      <h3 className="card__title">Sign Up Page</h3>
                       <span className="card__status">
-                        HTML5, JS and Tailwind CSS
+                        JSX, React JS and Tailwind CSS
                       </span>
                     </div>
                   </div>
                   <p className="card__description">
-                    For this project, I used a mobile-first approach to ensure
-                    that the website is fully responsive and optimized for
-                    different screen sizes.
+                    This is a fully functional and responsive sign up page. It
+                    was built with react js and styled with Tailwind css.
                   </p>
                   <span className="flex justify-center text-[1.2rem] pb-[1rem]">
                     <a
-                      href="https://careers-neon.vercel.app/"
+                      href="https://sign-up-two.vercel.app/"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -134,14 +130,13 @@ const portfolio = () => {
             </li>
 
             <li>
-              <a href="https://fops-weather-app.vercel.app/"
-                      target="_blank"
-                      rel="noreferrer" className="card">
-                <img
-                  src="https://i.imgur.com/2DhmtJ4.jpg"
-                  className="card__image"
-                  alt=""
-                />
+              <a
+                href="https://fops-weather-app.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="card"
+              >
+                <img src="weather.png" className="card__image" alt="" />
                 <div className="card__overlay">
                   <div className="card__header">
                     <svg
@@ -175,14 +170,13 @@ const portfolio = () => {
               </a>
             </li>
             <li>
-              <a  href="https://fops-to-do.vercel.app/"
-                      target="_blank"
-                      rel="noreferrer" className="card">
-                <img
-                  src="https://i.imgur.com/2DhmtJ4.jpg"
-                  className="card__image"
-                  alt=""
-                />
+              <a
+                href="https://fops-to-do.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="card"
+              >
+                <img src="todo.png" className="card__image" alt="" />
                 <div className="card__overlay">
                   <div className="card__header">
                     <svg
@@ -200,9 +194,9 @@ const portfolio = () => {
                     </div>
                   </div>
                   <p className="card__description">
-                    This project was built using React js, Tailwind css and
-                    Jsx. This is a To- do app to help with day-to-day activities
-                    and organizations.
+                    This project was built using React js, Tailwind css and Jsx.
+                    This is a To- do app to help with day-to-day activities and
+                    organizations.
                   </p>
                   <span className="flex justify-center text-[1.2rem] pb-[1rem]">
                     <a

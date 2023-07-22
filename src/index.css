@@ -106,7 +106,7 @@ label div:last-child {
 
 .card__image {      
   width: 100%;
-  height: auto;
+  height: 400px;
 }
 
 .card__overlay {
