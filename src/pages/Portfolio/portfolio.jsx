@@ -38,7 +38,7 @@ const portfolio = () => {
                     A simple weather app built with Jsx, Tailwind CSS, React JS
                     and FreeStoreAPI
                   </p>
-                  <span className="flex justify-center text-[1.2rem] pb-[1rem]">
+                  <span className="flex justify-center text-[1.6rem] pb-[1rem]">
                     <a
                       href="https://practices-store.vercel.app/"
                       target="_blank"
@@ -76,7 +76,7 @@ const portfolio = () => {
                     A beautiful functional responsive and user-friendly help
                     center page built with jsx, css and react app.
                   </p>
-                  <span className="flex justify-center text-[1.2rem] pb-[1rem]">
+                  <span className="flex justify-center text-[1.6rem] pb-[1rem]">
                     <a
                       href="https://help-center-site.vercel.app/"
                       target="_blank"
@@ -116,9 +116,9 @@ const portfolio = () => {
                     This is a fully functional and responsive sign up page. It
                     was built with react js and styled with Tailwind css.
                   </p>
-                  <span className="flex justify-center text-[1.2rem] pb-[1rem]">
+                  <span className="flex justify-center text-[1.6rem] pb-[1rem]">
                     <a
-                      href="https://sign-up-two.vercel.app/"
+                      href="https://signup-page-two.vercel.app/"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -157,7 +157,7 @@ const portfolio = () => {
                     A simple weather app built with Jsx, Tailwind CSS, React JS
                     and OpenWeatherApp API
                   </p>
-                  <span className="flex justify-center text-[1.2rem] pb-[1rem]">
+                  <span className="flex justify-center text-[1.6rem] pb-[1rem]">
                     <a
                       href="https://fops-weather-app.vercel.app/"
                       target="_blank"
@@ -198,7 +198,7 @@ const portfolio = () => {
                     This is a To- do app to help with day-to-day activities and
                     organizations.
                   </p>
-                  <span className="flex justify-center text-[1.2rem] pb-[1rem]">
+                  <span className="flex justify-center text-[1.6rem] pb-[1rem]">
                     <a
                       href="https://fops-to-do.vercel.app/"
                       target="_blank"
