@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <div>
-      <a className="anchor" id="hero"></a>
+      <a className="anchor scroll-smooth" id="hero"></a>
       <div className="txt pt-[10rem] flex flex-col lg:flex-row lg:justify-between gap-[2rem] px-[5rem]">
         <span className=" text-[2.2rem] font-[600] text-blue-800">
           {" "}
@@ -16,8 +16,8 @@ const Hero = () => {
       </div>
       <div className="w-[100%] flex items-center justify-center relative">
         <img
-          className="w-[15rem] absolute top-[0rem] lg:top-[-8rem] "
-          src="me.png"
+          className="w-[17em] absolute top-[0rem] lg:top-[-8rem] "
+          src="mee.png"
           alt=""
         />
         <div className="absolute top-[30rem] lg:top-[25rem] flex flex-col justify-center">

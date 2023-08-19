@@ -32,16 +32,12 @@ const Header = () => {
           </li>
         </ul>
         <div className="menu lg:hidden ">
-          <input type="checkbox" id="menu_checkbox" />
-          <label
-            for="menu_checkbox"
-            className="relative dark:text-white"
+          <button
+            className="text-[2.5rem] text-black dark:text-white"
             onClick={() => setOpen(!open)}
           >
-            <div className="bg-black dark:bg-white "></div>
-            <div className="bg-black dark:bg-white"></div>
-            <div className="bg-black dark:bg-white"></div>
-          </label>
+            {open ? <i class="bx bx-x"></i> : <i class="bx bx-menu"></i>}
+          </button>
           {open && <Resp />}
         </div>
       </header>
