@@ -16,8 +16,8 @@ const Hero = () => {
       </div>
       <div className="w-[100%] flex items-center justify-center relative">
         <img
-          className="w-[17em] absolute top-[0rem] lg:top-[-8rem] "
-          src="mee.png"
+          className="w-[15em] absolute top-[0rem] lg:top-[-8rem] "
+          src="me.png"
           alt=""
         />
         <div className="absolute top-[30rem] lg:top-[25rem] flex flex-col justify-center">
