@@ -12,12 +12,12 @@ const portfolio = () => {
           <ul className="cards px-[4rem] py-[8vw] lg:px-[8rem] lg:py-[8vw]">
             <li>
               <a
-                href="https://practices-store.vercel.app/"
+                href="https://yes-app.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
                 className="card"
               >
-                <img src="store.jpeg" className="card__image" alt="store" />
+                <img src="yesapp.jpeg" className="card__image" alt="" />
                 <div className="card__overlay">
                   <div className="card__header">
                     <svg
@@ -28,19 +28,20 @@ const portfolio = () => {
                     </svg>
 
                     <div className="card__header-text">
-                      <h3 className="card__title">Online Store</h3>
+                      <h3 className="card__title">Yes App </h3>
                       <span className="card__status">
-                        JSX, Tailwind CSS, React JS, FreeStoreAPI
+                        JSX, React JS and Tailwind CSS
                       </span>
                     </div>
                   </div>
                   <p className="card__description">
-                    A simple weather app built with Jsx, Tailwind CSS, React JS
-                    and FreeStoreAPI
+                    This is a fully functional and responsive sign up and sign
+                    in page . It was built with react js, firebase and styled
+                    with Tailwind css.
                   </p>
                   <span className="flex justify-center text-[1.6rem] pb-[1rem]">
                     <a
-                      href="https://practices-store.vercel.app/"
+                      href="https://yes-app.vercel.app/"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -88,7 +89,7 @@ const portfolio = () => {
                 </div>
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="https://sign-up-two.vercel.app/"
                 target="_blank"
@@ -119,6 +120,46 @@ const portfolio = () => {
                   <span className="flex justify-center text-[1.6rem] pb-[1rem]">
                     <a
                       href="https://signup-page-two.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i class="bx bx-link-external"></i>
+                    </a>
+                  </span>
+                </div>
+              </a>
+            </li> */}
+            <li>
+              <a
+                href="https://practices-store.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="card"
+              >
+                <img src="store.jpeg" className="card__image" alt="store" />
+                <div className="card__overlay">
+                  <div className="card__header">
+                    <svg
+                      className="card__arc"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path />
+                    </svg>
+
+                    <div className="card__header-text">
+                      <h3 className="card__title">Online Store</h3>
+                      <span className="card__status">
+                        JSX, Tailwind CSS, React JS, FreeStoreAPI
+                      </span>
+                    </div>
+                  </div>
+                  <p className="card__description">
+                    A simple weather app built with Jsx, Tailwind CSS, React JS
+                    and FreeStoreAPI
+                  </p>
+                  <span className="flex justify-center text-[1.6rem] pb-[1rem]">
+                    <a
+                      href="https://practices-store.vercel.app/"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -210,13 +251,15 @@ const portfolio = () => {
                 </div>
               </a>
             </li>
-            {/* <li>
-              <a href="" className="card">
-                <img
-                  src="https://i.imgur.com/2DhmtJ4.jpg"
-                  className="card__image"
-                  alt=""
-                />
+
+            <li>
+              <a
+                href="https://wordscour.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="card"
+              >
+                <img src="wordscour.jpeg" className="card__image" alt="" />
                 <div className="card__overlay">
                   <div className="card__header">
                     <svg
@@ -227,17 +270,28 @@ const portfolio = () => {
                     </svg>
 
                     <div className="card__header-text">
-                      <h3 className="card__title">kim Cattrall</h3>
-                      <span className="card__status">3 hours ago</span>
+                      <h3 className="card__title">Word Scour</h3>
+                      <span className="card__status">
+                        React js, Tailwind css and Jsx
+                      </span>
                     </div>
                   </div>
                   <p className="card__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores, blanditiis?
+                    This project was built using React js, Tailwind css, Jsx and
+                    free dictionary api.
                   </p>
+                  <span className="flex justify-center text-[1.6rem] pb-[1rem]">
+                    <a
+                      href="https://wordscour.vercel.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <i class="bx bx-link-external"></i>
+                    </a>
+                  </span>
                 </div>
               </a>
-            </li> */}
+            </li>
           </ul>
         </div>
       </div>
