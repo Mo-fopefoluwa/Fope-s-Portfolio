@@ -2,10 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* * {
-  outline: transparent;
-  -webkit-tap-highlight-color: transparent;
-} */
+
 :root {
   --surface-color: #fff;
   --curve: 40;
@@ -16,9 +13,28 @@
 body {
   margin: 0;
   font-family: "DM Sans", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  font-family: "Quicksand", sans-serif;
+  
+}
+
+
+
+.stars{
+  animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0
+  }
+  80% {
+    opacity: 0.5;
+  }
+}
+
+.eg{
+  background-color: rgba(212, 212, 212, 0.1);
 }
 
 .txt {
@@ -110,7 +126,7 @@ body {
 .card__title {
   font-size: 1em;
   margin: 0 0 .3em;
-  color: #5a4a52;
+  /* color: #5a4a52; */
   font-weight: 600;
 }
 
@@ -124,7 +140,7 @@ body {
 
 .card__status {
   font-size: .8em;
-  color: #afa6ab;
+  /* color: #afa6ab; */
 }
 
 .card__description {

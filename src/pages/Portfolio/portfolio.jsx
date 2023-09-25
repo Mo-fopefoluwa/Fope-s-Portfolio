@@ -1,16 +1,32 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { zoomIn, staggerChildren, fadeIn } from "../../utils/motion";
 
 const portfolio = () => {
   return (
     <div>
       <a className="anchor scroll-smooth" id="portfolio"></a>
-      <div className="pt-[6rem]">
-        <h1 className="text-blue-800 text-[1.6rem] lg:text-[2rem] font-[600] text-center">
-          My Latest Works
-        </h1>
-        <div>
-          <ul className="cards px-[4rem] py-[8vw] lg:px-[8rem] lg:py-[8vw]">
-            <li>
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        variants={staggerChildren}
+        viewport={{ once: false, amount: 0.25 }}
+        className="pt-[6rem]"
+      >
+        <motion.h1
+          variants={zoomIn(0.2, 1.5)}
+          className="text-white text-[1.6rem] lg:text-[2rem] font-[600] text-center"
+        >
+          My Latest <span className="text-red-600"> Works</span>
+        </motion.h1>
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          variants={staggerChildren}
+          viewport={{ once: false, amount: 0.25 }}
+        >
+          <ul className="cards px-[2rem] py-[8vw] md:px-[8rem] md:py-[8rem]">
+            <motion.li variants={fadeIn("up", "tween", 0.2, 1.5)}>
               <a
                 href="https://yes-app.vercel.app/"
                 target="_blank"
@@ -28,8 +44,8 @@ const portfolio = () => {
                     </svg>
 
                     <div className="card__header-text">
-                      <h3 className="card__title">Yes App </h3>
-                      <span className="card__status">
+                      <h3 className="card__title text-red-600">Yes App </h3>
+                      <span className="card__status text-red-400">
                         JSX, React JS and Tailwind CSS
                       </span>
                     </div>
@@ -50,8 +66,8 @@ const portfolio = () => {
                   </span>
                 </div>
               </a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={fadeIn("up", "tween", 0.4, 1.5)}>
               <a
                 href="https://help-center-site.vercel.app/"
                 target="_blank"
@@ -69,8 +85,12 @@ const portfolio = () => {
                     </svg>
 
                     <div className="card__header-text">
-                      <h3 className="card__title">Help Center Page</h3>
-                      <span className="card__status">JSX, CSS, React</span>
+                      <h3 className="card__title text-red-600">
+                        Help Center Page
+                      </h3>
+                      <span className="card__status text-red-400">
+                        JSX, CSS, React
+                      </span>
                     </div>
                   </div>
                   <p className="card__description">
@@ -88,7 +108,7 @@ const portfolio = () => {
                   </span>
                 </div>
               </a>
-            </li>
+            </motion.li>
             {/* <li>
               <a
                 href="https://sign-up-two.vercel.app/"
@@ -129,7 +149,7 @@ const portfolio = () => {
                 </div>
               </a>
             </li> */}
-            <li>
+            <motion.li variants={fadeIn("up", "tween", 0.6, 1.5)}>
               <a
                 href="https://practices-store.vercel.app/"
                 target="_blank"
@@ -147,8 +167,8 @@ const portfolio = () => {
                     </svg>
 
                     <div className="card__header-text">
-                      <h3 className="card__title">Online Store</h3>
-                      <span className="card__status">
+                      <h3 className="card__title text-red-600">Online Store</h3>
+                      <span className="card__status text-red-400">
                         JSX, Tailwind CSS, React JS, FreeStoreAPI
                       </span>
                     </div>
@@ -168,9 +188,9 @@ const portfolio = () => {
                   </span>
                 </div>
               </a>
-            </li>
+            </motion.li>
 
-            <li>
+            <motion.li variants={fadeIn("up", "tween", 0.8, 1.5)}>
               <a
                 href="https://fops-weather-app.vercel.app/"
                 target="_blank"
@@ -188,8 +208,8 @@ const portfolio = () => {
                     </svg>
 
                     <div className="card__header-text">
-                      <h3 className="card__title">Weather App</h3>
-                      <span className="card__status">
+                      <h3 className="card__title text-red-600">Weather App</h3>
+                      <span className="card__status text-red-400">
                         Jsx, Tailwind CSS and React JS{" "}
                       </span>
                     </div>
@@ -209,8 +229,8 @@ const portfolio = () => {
                   </span>
                 </div>
               </a>
-            </li>
-            <li>
+            </motion.li>
+            <motion.li variants={fadeIn("up", "tween", 1.0, 1.5)}>
               <a
                 href="https://fops-to-do.vercel.app/"
                 target="_blank"
@@ -228,8 +248,8 @@ const portfolio = () => {
                     </svg>
 
                     <div className="card__header-text">
-                      <h3 className="card__title">To-Do App</h3>
-                      <span className="card__status">
+                      <h3 className="card__title text-red-600">To-Do App</h3>
+                      <span className="card__status text-red-400">
                         React js, Tailwind css and Jsx
                       </span>
                     </div>
@@ -250,9 +270,9 @@ const portfolio = () => {
                   </span>
                 </div>
               </a>
-            </li>
+            </motion.li>
 
-            <li>
+            <motion.li variants={fadeIn("up", "tween", 1.2, 1.5)}>
               <a
                 href="https://wordscour.vercel.app/"
                 target="_blank"
@@ -270,8 +290,8 @@ const portfolio = () => {
                     </svg>
 
                     <div className="card__header-text">
-                      <h3 className="card__title">Word Scour</h3>
-                      <span className="card__status">
+                      <h3 className="card__title text-red-600">Word Scour</h3>
+                      <span className="card__status text-red-400">
                         React js, Tailwind css and Jsx
                       </span>
                     </div>
@@ -291,10 +311,10 @@ const portfolio = () => {
                   </span>
                 </div>
               </a>
-            </li>
+            </motion.li>
           </ul>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };

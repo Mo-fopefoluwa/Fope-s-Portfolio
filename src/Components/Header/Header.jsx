@@ -1,39 +1,46 @@
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import useHeaderShadow from "../../hooks/useHeaderShadow";
-//import useOutsideAlerter from "../../hooks/useOutsideAlerter";
+import { useOnOutsideClick } from "../../hooks/useOnClickOutside";
+import useHeaderColor from "../../hooks/useHeaderColor";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
   const headerShadow = useHeaderShadow();
+  const headerColor = useHeaderColor();
+  const { innerBorderRef } = useOnOutsideClick(() => setOpen(false));
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+  const scrollToAbout = () => {
+    document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollToPortfolio = () => {
+    document.getElementById("portfolio").scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div>
       <header
-        className="flex justify-between px-[4rem] py-[2rem] fixed w-full bg-[#dddd] dark:bg-gray-900 text-black dark:text-white z-50"
-        style={{ boxShadow: headerShadow }}
+        className="flex justify-between px-[4rem] py-[2rem] fixed w-full text-white z-50"
+        style={{ boxShadow: headerShadow, backgroundColor: headerColor }}
       >
         <div className="logo text-[2rem] font-[650] ">Mo</div>
-        <ul className="flex gap-10 md:hidden text-[1.2rem] font-[650] ">
-          <li>
-            <a className="hover:text-blue-800 scroll-smooth " href="#hero">
-              Home
-            </a>
+        <ul className="md:flex gap-10 hidden text-[1.2rem] font-[650] ">
+          <li onClick={scrollToTop}>
+            <a className="hover:text-red-600 cursor-pointer ">Home</a>
           </li>
-          <li>
-            <a className="hover:text-blue-800 scroll-smooth" href="#about">
-              About
-            </a>
+          <li onClick={scrollToAbout}>
+            <a className="hover:text-red-600 cursor-pointer">About</a>
           </li>
-          <li>
-            <a className="hover:text-blue-800 scroll-smooth" href="#portfolio">
-              Portfolio
-            </a>
+          <li onClick={scrollToPortfolio}>
+            <a className="hover:text-red-600 cursor-pointer">Portfolio</a>
           </li>
         </ul>
-        <div className="menu lg:hidden ">
+        <div className="menu block md:hidden " ref={innerBorderRef}>
           <button
-            className="text-[2.5rem] text-black dark:text-white"
+            className="text-[2.5rem] hover:text-red-600 text-white"
             onClick={() => setOpen(!open)}
           >
             {open ? <i class="bx bx-x"></i> : <i class="bx bx-menu"></i>}
@@ -46,19 +53,35 @@ const Header = () => {
 };
 
 const Resp = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+  const scrollToAbout = () => {
+    document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+  };
+  const scrollToPortfolio = () => {
+    document.getElementById("portfolio").scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <ul
-      //onClick={() => useOutsideAlerter()}
-      className="flex flex-col absolute text-[1.2rem] z-30 font-[500] text-center gap-[4rem] py-16 bg-[#dddd] dark:bg-black right-0 top-[7rem] w-[100%]"
-    >
-      <li className="hover:text-blue-800 text-black dark:text-white text-[1.1rem] font-[550] scroll-smooth">
-        <a href="#hero">Home</a>
+    <ul className="flex flex-col absolute text-[1.2rem] z-30 font-[500] text-center gap-[4rem] py-16 bg-black right-0 top-[7rem] w-[100%]">
+      <li
+        onClick={scrollToTop}
+        className="hover:text-red-600 cursor-pointer text-white text-[1.1rem] font-[550] scroll-smooth"
+      >
+        <a>Home</a>
       </li>
-      <li className="hover:text-blue-800 text-black dark:text-white text-[1.1rem] font-[550] scroll-smooth">
-        <a href="#about">About</a>
+      <li
+        onClick={scrollToAbout}
+        className="hover:text-red-600 cursor-pointer text-white text-[1.1rem] font-[550] scroll-smooth"
+      >
+        <a>About</a>
       </li>
-      <li className="hover:text-blue-800 text-black dark:text-white text-[1,1rem] font-[550] scroll-smooth">
-        <a href="#portfolio">Portfolio</a>
+      <li
+        onClick={scrollToPortfolio}
+        className="hover:text-red-600 cursor-pointer text-white text-[1,1rem] font-[550] scroll-smooth"
+      >
+        <a>Portfolio</a>
       </li>
     </ul>
   );

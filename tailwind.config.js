@@ -6,15 +6,6 @@ module.exports = {
   ],
   theme: {
     
-    screens: {
-
-      'lg': '1024px',
-
-      'md': {'max': '980px'},
-
-      'sm': {'max': '639px'},
-      
-    },
     extend: {},
   },
   plugins: [],

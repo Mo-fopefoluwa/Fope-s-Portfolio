@@ -7,7 +7,7 @@ const useHeaderShadow = () => {
     function handleScroll() {
       if (window.scrollY > 0) {
         setHeaderShadow(
-          "rgba(1, 1,0, 0.1) 0px 4px 6px -1px, rgba(1, 1, 0, 0.06) 0px 2px 4px -1px"
+          "rgba(212, 212, 212, 0.1) 0px 4px 6px -1px, rgba(212, 212, 212, 0.06) 0px 2px 4px -1px"
         );
       } else {
         setHeaderShadow("none");
