@@ -12,13 +12,24 @@
 
 body {
   margin: 0;
+ 
   font-family: "DM Sans", sans-serif;
   scroll-behavior: smooth;
   font-family: "Quicksand", sans-serif;
   
 }
 
+.tester{
+  font-family: 'Montserrat', sans-serif;
+}
 
+.tested{
+  font-family: "Quicksand", sans-serif;
+}
+
+.skilll:hover .skillls{
+  color: rgb(255, 0, 0);
+}
 
 .stars{
   animation: blink 2s linear infinite;
