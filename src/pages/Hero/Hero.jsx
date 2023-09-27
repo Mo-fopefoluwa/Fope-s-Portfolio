@@ -34,7 +34,7 @@ const Hero = () => {
           </h3>
           <motion.h1
             variants={zoomIn(0.2, 1.5)}
-            className="uppercase pb-[1rem] text-[2.5rem] leading-[3.2rem] md:text-[3rem] lg:text-[3.5rem] font-bold"
+            className="uppercase pb-[1rem] text-[2.5rem] leading-[2.4rem] md:leading-[3.2rem] md:text-[3rem] lg:text-[3.5rem] font-bold"
           >
             <span className="text-white ">
               Frontend <br /> Developer
@@ -56,33 +56,6 @@ const Hero = () => {
           src="me.png"
           alt=""
         />
-
-        {/* <motion.p
-            variants={fadeIn("up", "tween", 0.2, 1.5)}
-            className="text-red-600 text-[1.2rem] text-center md:text-left font-semibold md:text-[1.4rem]"
-          >
-            Hello! I'm Mofopefoluwa
-          </motion.p>
-          <motion.h2
-            variants={fadeIn("up", "tween", 0.4, 1.5)}
-            className="text-[2rem] md:text-[2rem] text-center md:text-left lg:text-[2.6rem] font-bold "
-          >
-            Frontend Developer
-          </motion.h2>
-          <motion.p
-            variants={fadeIn("up", "tween", 0.6, 1.5)}
-            className="text-[.9rem] pb-[1rem] text-center md:text-left"
-          >
-            {" "}
-            I build beautiful and responsive websites. HTML, CSS, JavaScript,
-            React JS, Tailwind CSS.
-          </motion.p>
-          <motion.button
-            variants={zoomIn(0.8, 1.5)}
-            className="bg-red-600 w-[30%] py-2"
-          >
-            <a href="mailto:fopefaokunla@gmail.com">Mail me</a>
-  </motion.button> */}
       </motion.div>
     </div>
   );

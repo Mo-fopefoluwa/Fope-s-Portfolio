@@ -16,8 +16,8 @@ const Header = () => {
   const scrollToAbout = () => {
     document.getElementById("about").scrollIntoView({ behavior: "smooth" });
   };
-  const scrollToPortfolio = () => {
-    document.getElementById("portfolio").scrollIntoView({ behavior: "smooth" });
+  const scrollToProjects = () => {
+    document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -34,7 +34,7 @@ const Header = () => {
           <li onClick={scrollToAbout}>
             <a className="hover:text-red-600 cursor-pointer">About</a>
           </li>
-          <li onClick={scrollToPortfolio}>
+          <li onClick={scrollToProjects}>
             <a className="hover:text-red-600 cursor-pointer">Portfolio</a>
           </li>
         </ul>
@@ -59,8 +59,8 @@ const Resp = () => {
   const scrollToAbout = () => {
     document.getElementById("about").scrollIntoView({ behavior: "smooth" });
   };
-  const scrollToPortfolio = () => {
-    document.getElementById("portfolio").scrollIntoView({ behavior: "smooth" });
+  const scrollToProjects = () => {
+    document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -78,7 +78,7 @@ const Resp = () => {
         <a>About</a>
       </li>
       <li
-        onClick={scrollToPortfolio}
+        onClick={scrollToProjects}
         className="hover:text-red-600 cursor-pointer text-white text-[1,1rem] font-[550] scroll-smooth"
       >
         <a>Portfolio</a>
