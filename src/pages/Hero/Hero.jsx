@@ -39,7 +39,7 @@ const Hero = () => {
             <span className="text-white ">
               Frontend <br /> Developer
             </span>
-            <span className="text-red-600 ">.</span>
+            <span className="tested text-red-600  text-[3rem] ">.</span>
           </motion.h1>
           <motion.a
             variants={fadeIn("up", "tween", 0.6, 1.5)}
