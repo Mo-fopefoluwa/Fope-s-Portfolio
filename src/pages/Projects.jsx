@@ -22,7 +22,7 @@ const Projects = () => {
         </motion.h2>
 
         <div className="grid gap-[4rem] sm:grid-cols-2 lg:grid-cols-4">
-          <motion.div variants={fadeIn("up", "tween", 0.4, 1.5)}>
+          {/* <motion.div variants={fadeIn("up", "tween", 0.4, 1.5)}>
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
               <img
                 className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -52,7 +52,7 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
           <motion.div variants={fadeIn("up", "tween", 0.6, 1.5)}>
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
               <img
@@ -83,7 +83,7 @@ const Projects = () => {
               </div>
             </div>
           </motion.div>
-          <motion.div variants={fadeIn("up", "tween", 0.8, 1.5)}>
+          {/* <motion.div variants={fadeIn("up", "tween", 0.8, 1.5)}>
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
               <img
                 className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -113,7 +113,7 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
           <motion.div variants={fadeIn("up", "tween", 1.0, 1.5)}>
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
               <img
