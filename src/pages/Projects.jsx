@@ -117,6 +117,36 @@ const Projects = () => {
               </div>
             </div>
           </motion.div>
+          <motion.div variants={fadeIn("up", "tween", 1.0, 1.5)}>
+            <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
+              <img
+                className="object-cover w-full h-56 md:h-64 xl:h-80"
+                src="landingpage.jpeg"
+                alt=""
+              />
+              <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
+                <p className="mb-1 text-lg font-bold text-red-600">
+                  Landing Page
+                </p>
+                <p className="mb-4 text-xs text-gray-100">
+                  Tailwind CSS and React.js
+                </p>
+                <p className="mb-4 text-xs tracking-wide text-gray-400">
+                  A beautiful responsive landing page built with tailwind css
+                  and react app.
+                </p>
+                <div className="text-white flex items-center justify-center space-x-3">
+                  <a
+                    href="https://fops-landing-page.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i class="bx bx-link-external"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </motion.div>
           {/* <motion.div variants={fadeIn("up", "tween", 1.0, 1.5)}>
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
               <img
