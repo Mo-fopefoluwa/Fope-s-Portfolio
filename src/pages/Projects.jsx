@@ -26,7 +26,7 @@ const Projects = () => {
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
               <img
                 className="object-cover w-full h-56 md:h-64 xl:h-80"
-                src="supermarket.jpeg"
+                src="supermarket.png"
                 alt=""
               />
               <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
