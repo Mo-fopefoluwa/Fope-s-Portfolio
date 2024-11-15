@@ -29,22 +29,22 @@ const Hero = () => {
         />
 
         <div className="text-white flex flex-col justify-center items-start">
-          <h3 className="text-[1.6rem] md:text-[2.2rem] lg:text-[2.6rem] text-[#474747] font-bold">
+          <h3 className="text-[1.6rem] md:text-[2.2rem] lg:text-[2.6rem] text-[#5e5e5e] font-bold">
             I'm a <br />
           </h3>
           <motion.h1
             variants={zoomIn(0.2, 1.5)}
             className="uppercase pb-[1rem] text-[2.5rem] leading-[2.4rem] md:leading-[3.2rem] md:text-[3rem] lg:text-[3.5rem] font-bold"
           >
-            <span className="text-white ">
+            <span className="text-[#e5e5e5] ">
               Frontend <br /> Developer
             </span>
-            <span className="tested text-red-600  text-[3rem] ">.</span>
+            <span className="tested text-[#ff7597]  text-[3rem] ">.</span>
           </motion.h1>
           <motion.a
             variants={fadeIn("up", "tween", 0.6, 1.5)}
-            className="bg-red-600  px-[2rem] py-[.2rem] text-white"
-            href="tel:+2348154980688"
+            className="bg-[#ff0266] rounded-[18px] hover:scale-95 duration-150 ease-in-out px-[2rem] py-[.2rem] text-white"
+            href="tel:+2348123600539"
           >
             Contact Me
           </motion.a>

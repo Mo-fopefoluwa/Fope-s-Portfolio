@@ -7,18 +7,18 @@ const Footer = () => {
 
   return (
     <div>
-      <footer className="bg-black text-white flex justify-between px-[3rem] lg:px-[5rem] py-[2rem] lg:py-[3rem]">
+      <footer className="bg-black text-[#e5e5e5] flex justify-between px-[3rem] lg:px-[5rem] py-[2rem] lg:py-[3rem]">
         <p className="w-[60%] lg:w-full text-[1.2rem] lg:text-[1.6rem] font-[600]">
           Let's talk about your project or just say{" "}
           <a
-            className="mails text-red-600 text-[2.1rem] lg:text-[2.8rem]"
+            className="mails text-[#ff0266] text-[2.1rem] lg:text-[2.8rem]"
             href="mailto:fopefaokunla@gmail.com"
           >
             hi!
           </a>
         </p>
 
-        <ul className="flex gap-4 text-red-600 text-[1.6rem] lg:text-[2.4rem] lg:gap-8">
+        <ul className="flex gap-4 text-[#ff0266] text-[1.6rem] lg:text-[2.4rem] lg:gap-8">
           <li>
             <a href="htpps://www.linked-in.com/in/mofopefoluwa-faokunla">
               <i class="bx bxl-linkedin"></i>

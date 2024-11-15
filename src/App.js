@@ -7,7 +7,7 @@ import Projects from "./pages/Projects";
 
 function App() {
   return (
-    <div className="texter bg-[black] ">
+    <div className="texter bg-[#121212] ">
       <Header />
       <Hero />
       <About />

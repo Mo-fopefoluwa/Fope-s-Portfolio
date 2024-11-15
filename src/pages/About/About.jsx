@@ -5,12 +5,12 @@ import { fadeIn, staggerChildren, zoomIn } from "../../utils/motion";
 const skills = [
   {
     name: "Programming Languages",
-    skill: "HTML5, CSS, JavaScript",
+    skill: "HTML, CSS, JavaScript",
     icon: <i class="bx bx-code-alt"></i>,
   },
   {
     name: "Web Frameworks",
-    skill: "React.js, Tailwind CSS",
+    skill: "React.js, Tailwind CSS, Bootstrap",
     icon: <i class="bx bx-world"></i>,
   },
 
@@ -54,24 +54,19 @@ const About = () => {
           >
             About Me
           </motion.p>
-          <h2 className="text-white text-[1.4rem] font-semibold">
+          <h2 className="text-[#e5e5e5] text-[1.4rem] font-semibold">
             Hello! I'm{" "}
             <motion.span
               variants={zoomIn(0.6, 1.5)}
-              className="logo text-red-600 text-[1.8rem]"
+              className="logo text-[#ff0266] text-[1.8rem]"
             >
               Mofopefoluwa
             </motion.span>
           </h2>
-          <p className="text-[#696666] pt-[1.2rem] leading-8">
-            Mofopefoluwa Faokunla is a self-taught Frontend Web Developer with a
-            passion for building beautiful and functional websites. <br />
-            My journey into the world of web development began 2021 when I
-            started taking an online course on HTML and CSS. Since then, I've
-            spent countless hours learning, practicing, and building projects to
-            showcase my abilities. <br />
-            {""} My skills include proficiency in HTML, CSS, JavaScript,
-            Tailwind and React .
+          <p className="text-[#aeaeae] pt-[1.2rem] leading-8">
+            Passionate and detail-oriented frontend developer with over two
+            years of hands-on experience in web development, specializing in
+            drafting responsive and user-friendly interfaces.
           </p>
         </div>
       </motion.div>
