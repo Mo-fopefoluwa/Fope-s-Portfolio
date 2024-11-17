@@ -22,7 +22,7 @@ const Projects = () => {
         </motion.h2>
 
         <div className="grid gap-[4rem] sm:grid-cols-2 lg:grid-cols-4">
-          <motion.div variants={fadeIn("up", "tween", 0.4, 1.5)}>
+          {/* <motion.div variants={fadeIn("up", "tween", 0.4, 1.5)}>
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
               <img
                 className="object-cover w-full h-56 md:h-64 xl:h-80"
@@ -31,30 +31,28 @@ const Projects = () => {
               />
               <div className="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
                 <p className="mb-1 text-lg font-bold text-[#ff0266]">
-                  GMarket website
+                  Cleaning Website
                 </p>
                 <p className="mb-4 text-xs text-gray-100">
-                  {" "}
-                  Firebase, Firestore, React JS and Tailwind CSS
+                  React JS and Tailwind CSS.
                 </p>
                 <p className="mb-4 text-xs tracking-wide text-gray-400">
-                  A grocery store/ supermarket website with admin page for
-                  adding new items. It was built with react js, firebase and
-                  styled with Tailwind css.
+                  A cleaning website with customer admin page. This website
+                  takes orders and redirects to the customer admin page.
                 </p>
                 <div className="flex items-center justify-center space-x-3">
                   <a
                     target="_blank"
                     rel="noreferrer"
-                    href="https://supermarket-template.vercel.app/"
-                    className="text-white transition-colors duration-300 hover:text-teal-accent-400"
+                    href="https://cleaning-website-seven.vercel.app/"
+                    className="text-[#e5e5e5] transition-colors duration-300 hover:text-teal-accent-400"
                   >
                     <i class="bx bx-link-external"></i>
                   </a>
                 </div>
               </div>
             </div>
-          </motion.div>
+          </motion.div> */}
 
           <motion.div variants={fadeIn("up", "tween", 0.6, 1.5)}>
             <div className="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
@@ -75,7 +73,7 @@ const Projects = () => {
                   A simple restaurant website built with Jsx, Tailwind CSS,
                   React JS
                 </p>
-                <div className="text-white flex items-center justify-center space-x-3">
+                <div className="text-[#e5e5e5] flex items-center justify-center space-x-3">
                   <a
                     href="https://restaurantwebsite-template-one.vercel.app/"
                     target="_blank"
@@ -105,7 +103,7 @@ const Projects = () => {
                   A beautiful functional responsive and user-friendly help
                   center page built with jsx, css and react app.
                 </p>
-                <div className="text-white flex items-center justify-center space-x-3">
+                <div className="text-[#e5e5e5] flex items-center justify-center space-x-3">
                   <a
                     href="https://help-center-site.vercel.app/"
                     target="_blank"
@@ -135,7 +133,7 @@ const Projects = () => {
                   A beautiful responsive landing page built with tailwind css
                   and react app.
                 </p>
-                <div className="text-white flex items-center justify-center space-x-3">
+                <div className="text-[#e5e5e5] flex items-center justify-center space-x-3">
                   <a
                     href="https://fops-landing-page.vercel.app/"
                     target="_blank"

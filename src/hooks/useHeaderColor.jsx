@@ -8,7 +8,7 @@ const useHeaderColor = () => {
       if (window.scrollY > 0) {
         setHeaderColor("#00000098");
       } else {
-        setHeaderColor("tranparent");
+        setHeaderColor("#121212");
       }
     }
     window.addEventListener("scroll", handleScroll);
