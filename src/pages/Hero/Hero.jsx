@@ -44,7 +44,7 @@ const Hero = () => {
           <motion.a
             variants={fadeIn("up", "tween", 0.6, 1.5)}
             className="bg-[#ff0266] rounded-[18px] hover:scale-95 duration-150 ease-in-out px-[2rem] py-[.2rem] text-white"
-            href="tel:+2348123600539"
+            href="https://wa.me/+2348123600539"
           >
             Contact Me
           </motion.a>
